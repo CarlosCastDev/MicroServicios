@@ -6,10 +6,12 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:CarlosCastDev/MicroServicios.git
-          searchPath: config-data
+          uri: https://github.com/CarlosCastDev/MicroServicios.git
+          searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
+          default-label: main
+          ignore-local-ssh-settings: true
   security:
     user:
       name: root
