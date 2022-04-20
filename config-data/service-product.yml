@@ -34,7 +34,7 @@ spring:
       fetch-registry: true
       register-with-eureka: true
       service-url:
-        defaultZone: ${eureka_url:http://localhost:8099/eureka/}
+        defaultZone: ${eureka_url:http://localhost:8761/eureka/}
     instance:
       hostname: localhost
       prefer-ip-address: true
